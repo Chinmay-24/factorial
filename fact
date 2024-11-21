@@ -1,0 +1,12 @@
+def factorial (n):
+    if n==0 or n==1:
+      return 1
+    else:
+        return n*factorial(n-1)
+N=int(input)
+R=int(input)
+if N>R:
+  Bin=factorial(N)/factorial(N-R)*factorial(R)
+print(R,factorial(R))
+print(N,factorial(N))
+print(Bin)
